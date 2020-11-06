@@ -32,9 +32,7 @@ class ConsoleModel:
 
 def connect_to_db():
     client = MongoClient(
-        'mongodb://ConsoleDBAdmin:m220password@cluster0-shard-00-00.kszyh.mongodb.net:27017,'
-        'cluster0-shard-00-01.kszyh.mongodb.net:27017,cluster0-shard-00-02.kszyh.mongodb.net:'
-        '27017/<dbname>?ssl=true&replicaSet=atlas-10oe5r-shard-0&authSource=admin&retryWrites=true&w=majority')
+        'mongodb://URI')
     return client.ConsoleDB
     # pprint(games_collection.find_one())
 
